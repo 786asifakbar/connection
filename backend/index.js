@@ -35,6 +35,32 @@ app.get('/api/jokes',(req , res)=>{
           title: "Why did the math book look sad?", 
           content: "An impasta!" 
         },
+         { 
+          id : 5,
+          title: "Why did the math book look sad?", 
+          content: "An impasta!" 
+        },
+        { 
+          id : 5,
+          title: "Why did the math book look sad?", 
+          content: "An impasta!" 
+        },
+        { 
+          id : 5,
+          title: "Why did the math book look sad?", 
+          content: "An impasta!" 
+        },
+        { 
+          id : 5,
+          title: "Why did the math book look sad?", 
+          content: "An impasta!" 
+        },
+        { 
+          id : 5,
+          title: "Why did the math book look sad?", 
+          content: "An impasta!" 
+        },
+       
         
     ];
     res.send(jokes);
