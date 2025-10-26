@@ -7,11 +7,35 @@ const app = express();
 
 app.get('/jokes',(req , res)=>{
     const jokes = [
-        "Why don't scientists trust atoms? Because they make up everything!",
-        "Why did the scarecrow win an award? Because he was outstanding in his field!",
-        "Why don't skeletons fight each other? They don't have the guts.",  
-        "What do you call fake spaghetti? An impasta!",
-        "Why did the bicycle fall over? Because it was two-tired!"
+        { 
+          id : 1, 
+          title: "Why did the chicken cross the road?", 
+          content: "Why don't scientists trust atoms?" 
+        },
+
+        { 
+          id : 2, 
+          title: "What do you call a bear with no teeth?",
+          content: "Why did the scarecrow win an award?!" 
+        },
+
+        { 
+          id : 3,
+          title: "Why don't skeletons fight each other?",
+          content: "They don't have the guts." 
+         },
+
+        { 
+          id : 4,
+          title: "What do you call fake spaghetti?",
+          },
+
+        { 
+          id : 5,
+          title: "Why did the math book look sad?", 
+          content: "An impasta!" 
+        },
+        
     ];
     res.send(jokes);
 });

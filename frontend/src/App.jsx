@@ -1,27 +1,31 @@
-
 import './App.css'
 
+
 function App() {
-const [jokes , setJokes ] = useState([])
+const [jokes , setJokes ] = useState([]) // create empty array to store jokes.
 
   return (
     <>
+      
       <h1> chai aur code </h1>
-      <p>Jokes : {jokes.length}</p>
+      <p>Jokes : {jokes.length} </p> // value of jokes length 
+
+      {
+        jokes.map((joke , index) => (
+          <div key={index,id}>
+            <p>{joke.title}</p>
+            <p>{joke.content}</p>
+          </div>
+        ))
+      }
 
 
 
-{
-  jokes.map((jokeObj) => (
-    <div key={jokeObj.id}>
-      <h3>Setup: {jokeObj.setup}</h3>
-      <p>Punchline: {jokeObj.punchline}</p>
-      <hr />
-    </div>
-  ))
-}
-    </>
+    
+    
+  
+   
+  </>
   )
 }
-
 export default App
